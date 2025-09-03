@@ -1,14 +1,4 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import i18n from "../../../src/i18n";
-import IconLanguageOutline from "../svgs/languageIcon";
-
 const header = () => {
-  const { t } = useTranslation();
-
-  const switchLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-  };
 
   const changeIcon = () => {
     console.log("Changing Menu Icon");
@@ -32,31 +22,28 @@ const header = () => {
           <ul>
             <li>
               <a href="#about">
-                {t("presentation")}
+                Sobre mim
               </a>
             </li>
             <li>
-              <a href="#experience">{t("experience")}</a>
-            </li>
-            <li>
-              <a href="#skills">{t("skills")}</a>
-            </li>
-            <li>
-              <a href="#portfolio">{t("portfolio")}</a>
-            </li>
-            <li>
-              <a href="#contacts">{t("contacts")}</a>
-            </li>
-            <li>
-              <a href="#">
-                <IconLanguageOutline />
+              <a href="#experience">
+                Experiência
               </a>
-              <ul className="navbar-submenu">
-                <li onClick={() => switchLanguage('en')}><a href="#">{t("langEn")}</a></li>
-                <li onClick={() => switchLanguage('pt')}><a href="#">{t("langPt")}</a></li>
-                <li onClick={() => switchLanguage('jprm')}><a href="#">{t("langJpRm")}</a></li>
-                <li onClick={() => switchLanguage('jp')}><a href="#">{t("langJp")}</a></li>
-            </ul>
+            </li>
+            <li>
+              <a href="#skills">
+                Habilidades
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                Portifólio
+              </a>
+            </li>
+            <li>
+              <a href="#contacts">
+                Contactos
+              </a>
             </li>
           </ul>
         </nav>

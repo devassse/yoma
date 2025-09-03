@@ -13,13 +13,13 @@ const about = () => {
             <span>{t("about")}</span> {t("mim")}
           </h2>
           <p>
-            {t("description_name")}
+            Profissional altamente qualificada com mais de 15 anos de experiência, incluindo 12 anos em multinacionais nos sectores de mineração, soluções digitais e programas.
           </p>
           <p>
-            {t("description_info")}
+            Excelentes habilidades de comunicação, análise, e domínio de softwares como Primavera, SAP, e Sage. Experiência em gestão de projetos internacionais e profundo conhecimento da legislação em Angola, Moçambique, e Portugal.
           </p>
         </div>
-        <div className="certifications-content">
+        {/* <div className="certifications-content">
           <article className="certifications">
             <div className="certification">
               <h3>Javascript</h3>
@@ -60,7 +60,7 @@ const about = () => {
               </a>
             </div>
           </article>
-        </div>
+        </div> */}
       </section>
       {/* ABOUT SECTION */}
     </>
